@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youth Team Soccer Training - Improve individual and team skills through focused training with expert coaching and competitive environment in Cary, NC.">
+    <meta name="keywords" content="youth soccer, soccer training, team training, skill development, Cary NC">
+    <meta name="author" content="Youth Team Soccer Training">
+    <title>Youth Team Soccer Training | Expert Coaching & Skill Development</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        /* Custom color variables */
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        .primary-color {
+            color: #5B4BFF;
+        }
+        
+        .bg-primary {
+            background-color: #5B4BFF;
+        }
+        
+        .bg-secondary {
+            background-color: #EEF0FF;
+        }
+        
+        .bg-accent {
+            background-color: #00E5A8;
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        /* Smooth transitions */
+        .transition-smooth {
+            transition: all 300ms ease-out;
+        }
+        
+        /* Hero gradient background */
+        .hero-gradient {
+            background: linear-gradient(135deg, #EEF0FF 0%, #ffffff 100%);
+        }
+        
+        /* Card hover effects */
+        .card-hover {
+            transition: all 300ms ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.15);
+        }
+        
+        /* Button hover effects */
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            transition: all 300ms ease-out;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+            filter: brightness(1.1);
+        }
+        
+        /* FAQ styles */
+        .faq-question {
+            cursor: pointer;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+        }
+        
+        .faq-answer {
+            transition: all 300ms ease-out;
+        }
+        
+        /* Mobile menu animation */
+        .mobile-menu {
+            transition: all 300ms ease-out;
+        }
+        
+        /* Sticky header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Link hover effects */
+        a {
+            transition: all 300ms ease-out;
+        }
+        
+        /* Section spacing */
+        section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header Navigation -->
+    <header class="w-full sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                    <i class="fas fa-soccer-ball text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold text-[#5B4BFF]">Soccer Training</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-12">
+                <a href="#features" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth">Testimonials</a>
+                <a href="#faq" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth">FAQ</a>
+                <a href="services.html" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth">Services</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-smooth">
+                <i class="fas fa-bars text-[#5B4BFF] text-xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-8 py-4 flex flex-col gap-4">
+                <a href="#features" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth py-2">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth py-2">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth py-2">Testimonials</a>
+                <a href="#faq" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth py-2">FAQ</a>
+                <a href="services.html" class="text-gray-700 font-medium hover:text-[#5B4BFF] transition-smooth py-2">Services</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-32 md:py-40 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#EEF0FF] rounded-full -mr-48 -mt-48 opacity-50"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#00E5A8] rounded-full -ml-36 -mb-36 opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-8 md:px-16 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                        Youth Soccer Team Training
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 font-medium mb-8 leading-relaxed">
+                        Improve individual and team skills through focused training
+                    </p>
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl">
+                        Our expert coaching program combines technical skill development with competitive team environments to help young athletes reach their full potential. Build confidence, master technique, and develop teamwork skills that will serve them on and off the field.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://smallgroupsoccer.com" class="btn-primary px-8 py-4 rounded-full font-semibold text-lg text-center inline-flex items-center justify-center gap-2 shadow-lg">
+                            Get Started Today
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#features" class="px-8 py-4 rounded-full font-semibold text-lg text-[#5B4BFF] border-2 border-[#5B4BFF] hover:bg-[#EEF0FF] transition-smooth text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-full max-w-md">
+                        <div class="absolute inset-0 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-3xl blur-3xl opacity-20"></div>
+                        <div class="relative bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-3xl p-1">
+                            <div class="bg-white rounded-3xl p-12 flex flex-col items-center justify-center gap-6">
+                                <div class="w-24 h-24 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-futbol text-white text-5xl"></i>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-3xl font-bold text-[#5B4BFF] mb-2">Expert Training</p>
+                                    <p class="text-gray-600">Professional coaching for youth athletes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+                    What We Offer
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our comprehensive training program combines expert coaching, structured skill development, and competitive environments to help young soccer players excel
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1: Expert Coaching -->
+                <div class="card-hover bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-md">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72v-3.5a6 6 0 00-9-5.64m12 9.14v3.5a6 6 0 01-9 5.64m0 0A6 6 0 009 9m12 0A6 6 0 009 9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Expert Coaching</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our certified coaches bring years of professional experience and a passion for developing young talent. Each coach is dedicated to creating a positive learning environment where every player can thrive.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Certified professional instructors</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Personalized coaching strategies</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Continuous player development</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Skill Development -->
+                <div class="card-hover bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-md">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Skill Development</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        We focus on building fundamental soccer skills with progressive training programs tailored to each player's age and ability level. From ball control to tactical awareness, we develop well-rounded athletes.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Technical skill mastery</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Age-appropriate training programs</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Measurable progress tracking</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Competitive Environment -->
+                <div class="card-hover bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-md">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Competitive Environment</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our small group training sessions create the perfect balance between focused instruction and friendly competition. Players challenge each other while supporting their teammates to grow together.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Small group training sessions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Friendly competitive drills</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#00E5A8] flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-700">Peer learning opportunities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 bg-gradient-to-b from-white to-[#EEF0FF]">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+                    Transform Your Game
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our training programs deliver real results that help young athletes reach new heights in their soccer journey
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Benefit 1: Build Confidence -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-smooth">
+                    <div class="flex items-start gap-6 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Build Confidence</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Through consistent training and positive reinforcement, players develop stronger self-belief both on and off the field. Our supportive coaching approach helps young athletes overcome challenges and celebrate their achievements.
+                    </p>
+                    <div class="flex items-center gap-2 text-[#5B4BFF] font-semibold">
+                        <span>Watch confidence soar</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Improve Technique -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-smooth">
+                    <div class="flex items-start gap-6 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Improve Technique</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Master the fundamentals with detailed instruction on ball control, passing accuracy, shooting precision, and defensive positioning. Our coaches use proven teaching methods to help players develop proper technique that becomes second nature.
+                    </p>
+                    <div class="flex items-center gap-2 text-[#5B4BFF] font-semibold">
+                        <span>Elevate your skills</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Improve Teamwork -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-smooth">
+                    <div class="flex items-start gap-6 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72v-3.5a6 6 0 00-9-5.64m12 9.14v3.5a6 6 0 01-9 5.64m0 0A6 6 0 009 9m12 0A6 6 0 009 9" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Improve Teamwork</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Soccer is a team sport, and we emphasize communication, cooperation, and collective strategy. Players learn to work together, support teammates, and understand how individual excellence contributes to team success.
+                    </p>
+                    <div class="flex items-center gap-2 text-[#5B4BFF] font-semibold">
+                        <span>Strengthen bonds</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+                    What Parents & Players Say
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hear from families who have experienced the impact of our training programs
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-smooth">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "My son has improved so much in just three months. His confidence on the field is incredible, and he's made great friends. The coaches really care about each player's development."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Mitchell</p>
+                            <p class="text-sm text-gray-600">Parent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-smooth">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "The training sessions are challenging but fun. I've learned so much about positioning and teamwork. Coach Marcus really pushes us to be better while keeping it enjoyable."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">James Rodriguez</p>
+                            <p class="text-sm text-gray-600">Player, Age 13</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-smooth">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "Emma went from hesitant to confident in just a few weeks. The small group setting means she gets personalized attention, and the progress is remarkable. Worth every penny!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">David Chen</p>
+                            <p class="text-sm text-gray-600">Parent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-smooth">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                        <i class="fas fa-star text-[#00E5A8]"></i>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "Best decision we made for our kids! The coaching is top-notch, the environment is positive, and they're actually excited to go to training. This is what youth sports should be."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Jessica Thompson</p>
+                            <p class="text-sm text-gray-600">Parent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32 bg-gradient-to-b from-white to-[#EEF0FF]">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+                    About Our Program
+                </h2>
+            </div>
+
+            <div class="space-y-8 md:space-y-10">
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Youth Team Soccer Training was founded with a simple mission: to provide young athletes in the Cary, North Carolina area with access to world-class soccer coaching that develops not just their technical skills, but also their character and confidence. Our founder, Marcus, brought his passion for soccer and years of coaching experience to create a program that stands apart from traditional team sports. We believe that small group training environments allow coaches to provide personalized attention while maintaining the competitive energy that helps players thrive.
+                </p>
+
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Our core values center on excellence, integrity, and player development. We're committed to creating a safe, inclusive, and positive environment where every young athlete can grow at their own pace. We emphasize not just winning, but the journey of improvement and the joy of playing the game we love. Through expert coaching, structured skill development, and a competitive yet supportive atmosphere, we help young soccer players build confidence, master technique, and develop the teamwork skills that will serve them throughout their athletic careers and beyond.
+                </p>
+            </div>
+
+            <div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-[#5B4BFF] mb-2">500+</div>
+                    <p class="text-gray-600 font-medium">Young Athletes Trained</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-[#5B4BFF] mb-2">10+</div>
+                    <p class="text-gray-600 font-medium">Years of Experience</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-[#5B4BFF] mb-2">98%</div>
+                    <p class="text-gray-600 font-medium">Player Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Find answers to common questions about our training program
+                </p>
+            </div>
+
+            <div class="space-y-4 md:space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md hover:shadow-lg transition-smooth">
+                    <div class="faq-question bg-gradient-to-r from-[#EEF0FF] to-white px-8 md:px-10 py-6 md:py-8 flex items-center justify-between cursor-pointer hover:bg-gradient-to-r hover:from-[#E5E0FF] hover:to-white">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">What age groups do you train?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-10 py-6 md:py-8 bg-white border-t border-gray-100">
+                        <p class="text-gray-700 leading-relaxed">
+                            We offer training programs for youth players ages 6 through 18, organized by age groups and skill levels. Our coaches tailor each session to be age-appropriate and developmentally suitable. Whether your child is just starting out or looking to improve their competitive level, we have a program that's right for them. We can discuss your child's current skill level and goals to recommend the best training group.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md hover:shadow-lg transition-smooth">
+                    <div class="faq-question bg-gradient-to-r from-[#EEF0FF] to-white px-8 md:px-10 py-6 md:py-8 flex items-center justify-between cursor-pointer hover:bg-gradient-to-r hover:from-[#E5E0FF] hover:to-white">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">How often do training sessions occur?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-10 py-6 md:py-8 bg-white border-t border-gray-100">
+                        <p class="text-gray-700 leading-relaxed">
+                            We offer flexible training schedules to accommodate families' needs. Most players participate in 1-2 training sessions per week, with options for additional training during peak seasons. Each session is typically 60-90 minutes depending on age group and program level. We also offer special training camps and intensive programs during school breaks. You can choose the frequency that works best for your family's schedule and your player's development goals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md hover:shadow-lg transition-smooth">
+                    <div class="faq-question bg-gradient-to-r from-[#EEF0FF] to-white px-8 md:px-10 py-6 md:py-8 flex items-center justify-between cursor-pointer hover:bg-gradient-to-r hover:from-[#E5E0FF] hover:to-white">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">What if my child is a beginner with no prior experience?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-10 py-6 md:py-8 bg-white border-t border-gray-100">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! We welcome beginners of all ages. Our beginner programs start with the fundamentals and build from there. Our coaches are experienced in working with players who have no prior soccer experience and create a welcoming, encouraging environment where they can learn at their own pace. We focus on building confidence alongside skill development, so new players feel comfortable and excited to learn. Many of our most dedicated players started as complete beginners.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md hover:shadow-lg transition-smooth">
+                    <div class="faq-question bg-gradient-to-r from-[#EEF0FF] to-white px-8 md:px-10 py-6 md:py-8 flex items-center justify-between cursor-pointer hover:bg-gradient-to-r hover:from-[#E5E0FF] hover:to-white">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">What equipment do players need?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-10 py-6 md:py-8 bg-white border-t border-gray-100">
+                        <p class="text-gray-700 leading-relaxed">
+                            Players need soccer cleats or athletic shoes with good ankle support, shin guards, and a soccer ball. We provide cones, training equipment, and other facilities. For the first session, comfortable athletic clothing and any shoes you have are fine while you get the proper gear. We're happy to provide recommendations for affordable, quality equipment. Some of our training packages include equipment for new players to get started without a large upfront investment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-md hover:shadow-lg transition-smooth">
+                    <div class="faq-question bg-gradient-to-r from-[#EEF0FF] to-white px-8 md:px-10 py-6 md:py-8 flex items-center justify-between cursor-pointer hover:bg-gradient-to-r hover:from-[#E5E0FF] hover:to-white">
+                        <h3 class="text-lg md:text-xl font-bold text-gray-900">How do I get started?</h3>
+                        <svg class="faq-icon w-6 h-6 text-[#5B4BFF] transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-8 md:px-10 py-6 md:py-8 bg-white border-t border-gray-100">
+                        <p class="text-gray-700 leading-relaxed">
+                            Getting started is easy! Simply reach out to us via email at marcus@smallgroupsoccer.com or visit our website to learn about current program offerings. We'll discuss your child's age, skill level, and goals to recommend the perfect training group. You can attend a trial session to see if it's a good fit before committing. We'll handle all the details and get your player on the field and improving their game in no time!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-32 relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&q=80'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        
+        <div class="max-w-4xl mx-auto px-8 md:px-16 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+                Ready to Transform Your Game?
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Join hundreds of young athletes in Cary who are building confidence, mastering technique, and developing teamwork skills through our expert coaching program.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://smallgroupsoccer.com" class="btn-primary px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-2xl">
+                    Enroll Now
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="px-8 py-4 rounded-full font-semibold text-lg text-white border-2 border-white hover:bg-white hover:text-gray-900 transition-smooth text-center">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <!-- Contact Form Section - Centered Card Layout -->
+    <section id="contact" class="py-20" style="background: linear-gradient(to bottom, #EEF0FF, #EEF0FF);">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #111827;">Get in Touch</h2>
+          <p class="text-lg max-w-2xl mx-auto opacity-75" style="color: #111827;">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="rounded-2xl shadow-xl p-8 md:p-12" style="background: #ffffff;">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-6">
+            <input type="hidden" name="access_key" value="3c036530-4b24-4c13-8e15-576e45ab7b78">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold mb-2" style="color: #111827;">
+                Full Name <span style="color: #ef4444;">*</span>
+              </label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                class="w-full px-4 py-3 border rounded-2xl outline-none transition-all"
+                style="border-color: #d1d5db; background: #ffffff; color: #111827;"
+                onfocus="this.style.borderColor='#5B4BFF'; this.style.boxShadow='0 0 0 3px #5B4BFF20'"
+                onblur="this.style.borderColor='#d1d5db'; this.style.boxShadow='none'"
+                placeholder="John Doe"
+              >
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-2" style="color: #111827;">
+                Email Address <span style="color: #ef4444;">*</span>
+              </label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="w-full px-4 py-3 border rounded-2xl outline-none transition-all"
+                style="border-color: #d1d5db; background: #ffffff; color: #111827;"
+                onfocus="this.style.borderColor='#5B4BFF'; this.style.boxShadow='0 0 0 3px #5B4BFF20'"
+                onblur="this.style.borderColor='#d1d5db'; this.style.boxShadow='none'"
+                placeholder="john@example.com"
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold mb-2" style="color: #111827;">
+                Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                class="w-full px-4 py-3 border rounded-2xl outline-none transition-all"
+                style="border-color: #d1d5db; background: #ffffff; color: #111827;"
+                onfocus="this.style.borderColor='#5B4BFF'; this.style.boxShadow='0 0 0 3px #5B4BFF20'"
+                onblur="this.style.borderColor='#d1d5db'; this.style.boxShadow='none'"
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold mb-2" style="color: #111827;">
+                Message <span style="color: #ef4444;">*</span>
+              </label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                rows="5" 
+                class="w-full px-4 py-3 border rounded-2xl outline-none resize-none transition-all"
+                style="border-color: #d1d5db; background: #ffffff; color: #111827;"
+                onfocus="this.style.borderColor='#5B4BFF'; this.style.boxShadow='0 0 0 3px #5B4BFF20'"
+                onblur="this.style.borderColor='#d1d5db'; this.style.boxShadow='none'"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                id="submit-btn"
+                class="w-full font-semibold py-4 px-8 rounded-2xl transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
+                style="background: #5B4BFF; color: #ffffff;"
+              >
+                Send Message
+              </button>
+            </div>
+            
+            <div id="form-message" class="mt-4 p-4 rounded-2xl hidden" style="background: #10b981; color: #ffffff;">
+              ✓ Message sent successfully!
+            </div>
+          </form>
+          
+          <script>
+            (function() {
+              const form = document.getElementById('contact-form');
+              const submitBtn = document.getElementById('submit-btn');
+              const messageDiv = document.getElementById('form-message');
+              
+              form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+                
+                try {
+                  const formData = new FormData(form);
+                  const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                  });
+                  
+                  const result = await response.json();
+                  
+                  if (result.success) {
+                    form.reset();
+                    messageDiv.classList.remove('hidden');
+                    submitBtn.textContent = 'Sent';
+                    
+                    setTimeout(() => {
+                      messageDiv.classList.add('hidden');
+                      submitBtn.disabled = false;
+                      submitBtn.textContent = 'Send Message';
+                    }, 5000);
+                  } else {
+                    throw new Error('Submission failed');
+                  }
+                } catch (error) {
+                  submitBtn.disabled = false;
+                  submitBtn.textContent = 'Send Message';
+                  messageDiv.style.background = '#ef4444';
+                  messageDiv.textContent = '✗ Failed to send. Please try again.';
+                  messageDiv.classList.remove('hidden');
+                  
+                  setTimeout(() => {
+                    messageDiv.classList.add('hidden');
+                    messageDiv.style.background = '#10b981';
+                    messageDiv.textContent = '✓ Message sent successfully!';
+                  }, 5000);
+                }
+              });
+            })();
+          </script>
+        </div>
+
+        <div class="mt-12 text-center opacity-75">
+          <p style="color: #111827;">
+            Or email us directly at <a href="mailto:hello@example.com" class="font-semibold hover:opacity-80 transition-opacity" style="color: #5B4BFF;">hello@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  <footer class="bg-gray-900 text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mb-12 md:mb-16">
+                <!-- Footer Column 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#5B4BFF] to-[#00E5A8] rounded-lg flex items-center justify-center">
+                            <i class="fas fa-soccer-ball text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">Soccer Training</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Expert youth soccer training in Cary, NC. Building confidence, improving technique, and developing teamwork through focused training programs.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-smooth">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-smooth">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#5B4BFF] transition-smooth">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Navigation</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-smooth">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-smooth">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-smooth">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-smooth">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 3: Pages -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Pages</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-smooth">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Column 4: Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-[#00E5A8] mt-1 flex-shrink-0"></i>
+                            <p class="text-gray-400">
+                                3434 Kildaire Farm Rd #820<br>
+                                Cary, NC 27518<br>
+                                United States
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-[#00E5A8]"></i>
+                            <a href="tel:(919) 230-1210" class="text-gray-400 hover:text-white transition-smooth">(919) 230-1210</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-[#00E5A8]"></i>
+                            <a href="mailto:marcus@smallgroupsoccer.com" class="text-gray-400 hover:text-white transition-smooth">marcus@smallgroupsoccer.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 md:pt-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <p class="text-gray-400 text-center md:text-left">
+                        &copy; 2025 Youth Team Soccer Training. All rights reserved.
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="services.html" class="text-gray-400 hover:text-white transition-smooth">Services</a>
+                        <a href="contact.html" class="text-gray-400 hover:text-white transition-smooth">Contact</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
